@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: none;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+form {
+    display: grid;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    height: 3em;
+    font-size: 1rem;
+    padding: 1em 1em 0;
+    border: none;
+    border-radius: 7px;
+    background: lightgrey;
+}
+
+input:focus {
+    outline: none;
+    opacity: 0.8;
+    border-bottom: 3px solid black;
+}
+
+.input_container {
+    position: relative;
+}
+
+.label {
+    /* user-select: contain; */
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    opacity: 0.6;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.label:hover {
+    cursor: text;
+}
+
+.small {
+    top: 10%;
+    transform: translateY(0%);
+    font-size: 0.75rem;
+    transition: all 0.2s;
+}
+
+.error {
+    color: red;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background: black;
+    display: block;
+    border: 0;
+    border-radius: 7px;
+    padding: 1em 2.5em;
+}
+
+button:hover {
+    background: orangered;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+.success {
+    text-align: center;
+}
